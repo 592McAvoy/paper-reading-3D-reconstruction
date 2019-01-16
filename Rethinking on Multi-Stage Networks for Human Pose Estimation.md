@@ -56,6 +56,8 @@ eg. OpenPose
 
 ------
 
+![2-stage MSPN](./assets/1-1.png)
+
 ## 三、Multi-Stage Pose Network 
 
 ### 主要工作
@@ -66,7 +68,7 @@ Observation 1：现有的multi-stage方法中的single-stage模块不是最优�
 
 
 
-Observation 2：现有的multi-stage方法中重复进行own-sampling和up-sampling导致信息丢失，从而阻碍了后续的优化
+Observation 2：现有的multi-stage方法中重复进行down-sampling和up-sampling导致信息丢失，从而阻碍了后续的优化
 
 ->Optimization 2：集合不同stage 的特征信息来强化信息流
 
@@ -78,14 +80,11 @@ Observation 3：multi-stage方法中pose localization的精确度是随着stage�
 
 
 
-![2-stage MSPN](./assets/1-1.png)
-
-
-
-### Effective Design of Single-Stage Module
 
 ![](./assets/1-2.png)
 
+
+### Optimization 1. Effective Design of Single-Stage Module
 
 
 **问题**：Hourglass网络的每一个stacked hourglass模块中，每次down-sampling和up-sampling的channel数目都一样，这就导致low scale的层级中损失了大量的特征信息
@@ -93,13 +92,18 @@ Observation 3：multi-stage方法中pose localization的精确度是随着stage�
 **对策**：
 
 1. 每一次down-sampling都把channel数乘2，从而减少信息损失
-2. 把计算资源主要投入到down-sampling过程中。因为down-sampling过程提取出有代表性的特征信息，对整体识别很关键。而up-sampling过程主要用于恢复高分辨率，对损失信息恢复起不到太大作用，重要性不及down-sampling过程
+2. 把计算资源主要投入到down-sampling过程中。因为down-sampling过程提取出有代表性的特征信息，对整体识别很关键。而up-sampling过程主要用于恢复高分辨率，对损失信息恢复起不到太大作用，重要性不及down-sampling过程       
 
 
 
-### Cross Stage Feature Aggregation
+
+
 
 ![](./assets/1-3.png)
+
+
+### Optimization 2. Cross Stage Feature Aggregation
+
 
 
 
@@ -107,11 +111,15 @@ Observation 3：multi-stage方法中pose localization的精确度是随着stage�
 
 **对策**：在每一次down-sampling过程中，集合来自**上一stage的同scale的 down-sampling** 和**up-sampling units** 的特征信息，以及**本stage的 down-sampled features** 
 
-通过集合不同stage的特征信息，来弥补采样过程中的信息丢失，解决优化过程中梯度消失的问题，这一过程可以类比残差网络的设计
+通过集合不同stage的特征信息，来弥补采样过程中的信息丢失，解决优化过程中梯度消失的问题，这一过程可以类比残差网络的设计     
 
-### Coarse-to-ﬁne Supervision
+
+
 
 ![](./assets/1-4.png) 
+
+### Optimization 3. Coarse-to-ﬁne Supervision
+
 
 **现象**：
 
