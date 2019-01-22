@@ -92,7 +92,7 @@ $$
 $$
 S = [S_1,...,S_{|\vec{\beta}|}]
 $$
-$S_n \in R^{3N} $是某个shape对应的N个vertex的偏移，**S**是集合了所有shape的形变偏移矩阵
+$S_n \in R^{3N} $是某个shape特征对应的N个vertex的偏移，**S**是集合了所有shape的形变偏移矩阵
 
 **· 可训练的参数：S**
 
@@ -156,3 +156,12 @@ $$
 $$
 \Phi=\{ W,S,J,P\}
 $$
+
+------
+
+## 四. 疑问
+
+![](assets/3-5.png)
+
+- 为什么SMPL中的pose blend shape function可以解决畸变的问题？
+- 欠缺有关指数映射和Rodrigues formula 的数学知识，所以对pose blend shape中的映射和blend skinning中的旋转变形过程不是很理解
