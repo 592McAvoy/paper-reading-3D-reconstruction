@@ -6,3 +6,4 @@
 4. [Video Based Reconstruction of 3D People Models笔记](https://github.com/592McAvoy/Paper-study-note/blob/master/Video%20Based%20Reconstruction%20of%203D%20People%20Models.md)
 5. [Detailed Human Avatars from Monocular Video笔记](https://github.com/592McAvoy/Paper-study-note/blob/master/Detailed%20Human%20Avatars%20from%20Monocular%20Video.md)
 6. [SiCloPe:Silhouette-Based Clothed People笔记](https://github.com/592McAvoy/Paper-study-note/blob/master/SiCloPe%20-%20Silhouette-Based%20Clothed%20People.md)
+7. [Total Capture: A 3D Deformation Model for Tracking Faces, Hands, and Bodies笔记](https://github.com/592McAvoy/Paper-study-note/blob/master/Total%20Capture%20-%20A%203D%20Deformation%20Model%20for%20Tracking%20Faces,%20Hands,%20and%20Bodies.md)
