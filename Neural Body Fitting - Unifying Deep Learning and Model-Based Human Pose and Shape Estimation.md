@@ -18,7 +18,7 @@
 
 ## 二. Human pose estimation - 3D method
 
-现有的根据image推测3D参数的方法主要有两类：**基于模型的（Model-based Methods）** 和 **基于深度学习的（Learning-Based Models） ** ：
+现有的根据image推测3D参数的方法主要有两类：**基于模型的（Model-based Methods）** 和 **基于深度学习的（Learning-Based Models）**：
 
 | 类别       | Model-based Methods                                          | Learning-Based Models                                        |
 | ---------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
