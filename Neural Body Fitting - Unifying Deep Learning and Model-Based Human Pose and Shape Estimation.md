@@ -53,7 +53,7 @@ $$
 
 1. 3D latent parameter loss：计算预测的$\theta$和$\beta$与ground truth的L1损失
 2. 3D joint loss：计算预测出的SMPL的3D keypoints与ground truth的L2损失
-3. 3D joint loss：计算投影得到的2D keypoints与ground truth的L2损失
+3. 2D joint loss：计算投影得到的2D keypoints与ground truth的L2损失
 4. Joint 2D and 3D loss：同时计算2. 和3.的损失，对两种维度都进行监督
 
 
