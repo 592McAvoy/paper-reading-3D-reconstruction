@@ -8,3 +8,4 @@
 6. [SiCloPe:Silhouette-Based Clothed People笔记](https://github.com/592McAvoy/Paper-study-note/blob/master/SiCloPe%20-%20Silhouette-Based%20Clothed%20People.md)
 7. [Total Capture: A 3D Deformation Model for Tracking Faces, Hands, and Bodies笔记](https://github.com/592McAvoy/Paper-study-note/blob/master/Total%20Capture%20-%20A%203D%20Deformation%20Model%20for%20Tracking%20Faces,%20Hands,%20and%20Bodies.md)
 8. [Neural Body Fitting: Unifying Deep Learning and Model-Based Human Pose and Shape Estimation笔记](https://github.com/592McAvoy/Paper-study-note/blob/master/Neural%20Body%20Fitting%20-%20Unifying%20Deep%20Learning%20and%20Model-Based%20Human%20Pose%20and%20Shape%20Estimation.md)
+9. [BodyNet： Volumetric Inference of 3D Human Body Shapes笔记](https://github.com/592McAvoy/Paper-study-note/blob/master/BodyNet%20-%20Volumetric%20Inference%20of%203D%20Human%20Body%20Shapes.md)
