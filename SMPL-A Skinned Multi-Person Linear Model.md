@@ -72,12 +72,12 @@ $$
 
 SMPL采用的是LBS方法进行骨骼蒙皮：  
 $$
-\bar{t_i}^'=\sum_{k=1}^{K}w_{k,i}G^'_k(\vec{\theta},J)\bar{t_i}
+\bar{t_i}^{\`}=\sum_{k=1}^{K}w_{k,i}G^{\`}_{k}(\vec{\theta},J)\bar{t_i}
 $$
 其中：
 
 - $w_{k,i}$是第k个关节点对第i个vertex的影响，整体来看可用一个**混合权重矩阵W**（$W \in R^{N*K}$）表示所有vertex和所有keypoint之间的weighted influence
-- t代指**平均模型$\bar{T}$**上的某个顶点
+- t代指 **平均模型$\bar{T}$** 上的某个顶点
 - $G_k$是姿态θ下关节点k的**变形矩阵**
 
 **· 可训练的参数：W**
