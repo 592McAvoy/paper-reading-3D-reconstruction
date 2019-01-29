@@ -136,7 +136,7 @@ SMPL的关键优化之处就在于，在基本的LBS模型之上，通过blend s
 
 假设用L来表示LBS方法，最基本的LBS模型可以表示为：
 $$
-L（T,J,\vec{\theta},W）→  \bar{t_i}^`=\sum_{k=1}^{K}w_{k,i}G^`_k(\vec{\theta},J)\bar{t_i}
+L（T,J,\vec{\theta},W）→  \bar{t_i}^{\`}=\sum_{k=1}^{K}w_{k,i}G^{\`}_k(\vec{\theta},J)\bar{t_i}
 $$
 其中**T**是指rest pose下的模型template，**J**是关节点位置，**W**是混合权重矩阵
 
