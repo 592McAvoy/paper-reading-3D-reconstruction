@@ -42,7 +42,7 @@ SMPLify的工作流程如下：
 
 每个capsule通过半径（radius）和轴长（axis length）来定义，共有20个capsule，分别对应身体的不同部分。
 
-首先，人工将capsule放置到模板模型的joint位置，使用梯度方法优化radius和axis length使capsules和模型表面的双向距离最近。然后,使用cross-validated ridge regression训练y一个从shape系数到capsule参数的线性回归器。
+首先，人工将capsule放置到模板模型的joint位置，使用梯度方法优化radius和axis length使capsules和模型表面的双向距离最近。然后,使用cross-validated ridge regression训练一个从shape系数到capsule参数的线性回归器。
 
 单独训练得到这个线性回归器后，就可以直接用在SMPLify过程中，利用shape $\beta$ 得到近似的capsules，然后就可以计算穿模情况了
 
