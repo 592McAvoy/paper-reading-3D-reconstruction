@@ -93,7 +93,7 @@ RGB：$3\*256\*256 ​$
 
 2D segmentation：$15\*64\*64 $ （15个body part的heatmap），空间交叉熵损失$L_s$
 
-3D pose：表示为$64\*64\*19$的体空间中的点（与3D shape）同一空间，（x,y）与2D pose相同，深度z通过2D segmentation的遮挡关系推算。使用均方差损失$L_j^{3D}
+3D pose：表示为$64\*64\*19$的体空间中的点（与3D shape）同一空间，（x,y）与2D pose相同，深度z通过2D segmentation的遮挡关系推算。使用均方差损失$L_j^{3D}$
 
 
 
