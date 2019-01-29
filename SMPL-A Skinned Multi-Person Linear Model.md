@@ -152,7 +152,7 @@ $$
 $$
 M(\vec{\beta},\vec{\theta};\Phi)=L(T_p(\vec{\beta},\vec{\theta}),J(\vec{\beta}),\vec{\theta},W)
 $$
-其中**$\Phi$**表示**可被训练的所有参数**的集合：
+其中**$\Phi$** 表示 **可被训练的所有参数** 的集合：
 $$
 \Phi=\{ W,S,J,P\}
 $$
