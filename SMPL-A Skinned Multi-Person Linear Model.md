@@ -70,9 +70,9 @@ $$
 
 ![](assets/3-4.png)
 
-SMPL采用的是LBS方法进行骨骼蒙皮：
+SMPL采用的是LBS方法进行骨骼蒙皮：  
 $$
-\bar{t_i}^`=\sum_{k=1}^{K}w_{k,i}G^`_k(\vec{\theta},J)\bar{t_i}
+\bar{t_i}^'=\sum_{k=1}^{K}w_{k,i}G^'_k(\vec{\theta},J)\bar{t_i}
 $$
 其中：
 
