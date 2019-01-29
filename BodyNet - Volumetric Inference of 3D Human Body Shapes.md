@@ -87,13 +87,13 @@ BodyNet由4个自网络组成，他们的任务分别是：
 
 3D shape是从RGB，2D pose，2D segmentation和3D pose中得到的，后三者是分别从对应的子网络中得到的，这些子网络都基于Hourglass network。
 
-RGB：$3*256*256 ​$
+RGB：$3\*256\*256 ​$
 
-2D pose：$16*64*64 ​$ （16个keypoints的heatmap），均方差损失$L_j^{2D}​$
+2D pose：$16\*64\*64 ​$ （16个keypoints的heatmap），均方差损失$L_j^{2D}​$
 
-2D segmentation：$15*64*64 $ （15个body part的heatmap），空间交叉熵损失$L_s$
+2D segmentation：$15\*64\*64 $ （15个body part的heatmap），空间交叉熵损失$L_s$
 
-3D pose：表示为$64*64*19$的体空间中的点（与3D shape）同一空间，（x,y）与2D pose相同，深度z通过2D segmentation的遮挡关系推算。使用均方差损失$L_j^{3D}
+3D pose：表示为$64\*64\*19$的体空间中的点（与3D shape）同一空间，（x,y）与2D pose相同，深度z通过2D segmentation的遮挡关系推算。使用均方差损失$L_j^{3D}
 
 
 
