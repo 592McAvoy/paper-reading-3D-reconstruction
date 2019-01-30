@@ -44,7 +44,7 @@ GrabCut是微软研究院的一个课题，是采用graph cut图分割和最大�
 | 问题                                                         | 对策                                                |
 | ------------------------------------------------------------ | --------------------------------------------------- |
 | RGB video中人物的身体部分会存在互相遮挡的问题，但是视频中深度信息是隐式的 | 使用template mesh帮助捕获video中的信息              |
-| 人体的会产生复杂的关节运动                                   | 定义骨骼变形（skeleton deformation）空间            |
+| 人体会产生复杂的关节运动                                   | 定义骨骼变形（skeleton deformation）空间            |
 | 皮肤和衣物的变形是非刚性的                                   | 定义非刚性形变（non-rigid surface deformation）空间 |
 
 
@@ -61,7 +61,7 @@ GrabCut是微软研究院的一个课题，是采用graph cut图分割和最大�
 
 ### 1. 基于批处理的3D human pose估测
 
-人物的关节运动被参数化为一个骨骼（skeleton），有16个joint的skeleton $S=\{t,R,\Theta\}​$ ，其中，$t\in R^3​$ 表征位移，$R\in SO(3)​$ 表征旋转，$\Theta\in R^{27}​$ 表征27个角度。template mesh通过双四元数蒙皮捆绑在这一skeleton上。
+人物的关节运动被参数化为一个骨骼（skeleton），有16个joint的skeleton $S= \{t,R,\Theta \}​$ ，其中，$t\in R^3​$ 表征位移，$R\in SO(3)​$ 表征旋转，$\Theta\in R^{27}​$ 表征27个角度。template mesh通过双四元数蒙皮捆绑在这一skeleton上。
 
 video序列被划分成不同的batch，batch之间会出现重合的帧。每个batch都被单独处理，batch内部各帧的skeleton被统一优化。
 
