@@ -37,7 +37,7 @@ View Synthesis任务主要有三类解决方法：基于3D模型的，基于2D�
 
 ### 2. Generative Adversarial Networks (GANs)
 
-**生成式对抗网络（Generative Adversarial Networks，GANs）**是蒙特利尔大学的Goodfellow Ian于2014年提出的一种生成模型
+**生成式对抗网络（Generative Adversarial Networks，GANs）** 是蒙特利尔大学的Goodfellow Ian于2014年提出的一种生成模型
 
 GANs中包含了两个模型，一个是生成模型G，另一个是判别模型D:
 
@@ -50,7 +50,7 @@ GANs的实现方法是让D和G进行博弈，训练过程中通过相互竞争�
 
 ### 3. Perceptual Loss
 
-**感知损失（perceptual loss）**是将真实图片卷积得到的feature与生成图片卷积得到的feature作比较，使得高层信息（内容和全局结构）接近，也就是感知的意思。
+**感知损失（perceptual loss）** 是将真实图片卷积得到的feature与生成图片卷积得到的feature作比较，使得高层信息（内容和全局结构）接近，也就是感知的意思。
 
 
 
