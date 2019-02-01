@@ -119,7 +119,7 @@ $$
 
 用$L_{SMPL}$表示对$S_{SMPL}$进行segmentation之后的label map，对比$L_{SMPL}$ ，对$S$构造label map $L_{init}$：
 $$
-\min_{L_init}\sum_{p\in S}U(L_{init}(p))+\gamma\sum_{p\in S,q\in N(p)\and S}V(L_{init}(p),L_{init}(q))
+\min_{L_init}\sum_{p\in S}U(L_{init}(p))+\gamma\sum_{p\in S,q\in N(p)\bigcap S}V(L_{init}(p),L_{init}(q))
 $$
 
 - $U$鼓励$L_{init}$和$L_{SMPL}$相似
@@ -139,7 +139,7 @@ $$
 
 在得到body part segment之后就要对被遮挡的部分进行shape恢复
 
-首先把头，躯干和双腿当作一个区域 $B$（目的就是恢复手臂对$B$的遮挡），然后提取出这一区域的边界$\delta B$ ，然后进一步得到被遮挡的边界$\delta B^{ocl}\in\delta B\and O$。同时，把SMPL的头，躯干和双腿进行投影，把$\delta B^{ocl}$上的点替换成$\delta B_{SMPL}^{ocl}$上的对应点，这样就对被遮挡的$B^{ocl}$进行了恢复
+首先把头，躯干和双腿当作一个区域 $B$（目的就是恢复手臂对$B$的遮挡），然后提取出这一区域的边界$\delta B$ ，然后进一步得到被遮挡的边界$\delta B^{ocl}\in\delta B\bigcap O$。同时，把SMPL的头，躯干和双腿进行投影，把$\delta B^{ocl}$上的点替换成$\delta B_{SMPL}^{ocl}$上的对应点，这样就对被遮挡的$B^{ocl}$进行了恢复
 
 #### （3）构建完整mesh
 
