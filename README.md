@@ -14,3 +14,4 @@
 10. [View Extrapolation of Human Body from a Single Image笔记](https://github.com/592McAvoy/Paper-study-note/blob/master/View%20Extrapolation%20of%20Human%20Body%20from%20a%20Single%20Image.md)
 11. [Keep it SMPL: Automatic Estimation of 3D Human Pose and Shape from a Single Image笔记](https://github.com/592McAvoy/Paper-study-note/blob/master/Keep%20it%20SMPL%20-%20Automatic%20Estimation%20of%203D%20Human%20Pose%20and%20Shape%20from%20a%20Single%20Image.md)
 12. [MonoPerfCap: Human Performance Capture from Monocular Video笔记](https://github.com/592McAvoy/Paper-study-note/blob/master/MonoPerfCap%20-%20Human%20Performance%20Capture%20from%20Monocular%20Video.md)
+13. [Photo Wake-Up: 3D Character Animation from a Single Photo笔记](https://github.com/592McAvoy/Paper-study-note/blob/master/Photo%20Wake-Up%20-%203D%20Character%20Animation%20from%20a%20Single%20Photo.md)
