@@ -16,3 +16,4 @@
 12. [MonoPerfCap: Human Performance Capture from Monocular Video笔记](https://github.com/592McAvoy/Paper-study-note/blob/master/MonoPerfCap%20-%20Human%20Performance%20Capture%20from%20Monocular%20Video.md)
 13. [Photo Wake-Up: 3D Character Animation from a Single Photo笔记](https://github.com/592McAvoy/Paper-study-note/blob/master/Photo%20Wake-Up%20-%203D%20Character%20Animation%20from%20a%20Single%20Photo.md)
 14. [Dense Pose Transfer笔记](https://github.com/592McAvoy/Paper-study-note/blob/master/Dense%20Pose%20Transfer.md)
+15. [End-to-end Recovery of Human Shape and Pose笔记](https://github.com/592McAvoy/Paper-study-note/blob/master/End-to-end%20Recovery%20of%20Human%20Shape%20and%20Pose.md)
