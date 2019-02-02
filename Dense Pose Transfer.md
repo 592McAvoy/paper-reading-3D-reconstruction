@@ -91,7 +91,7 @@ DensePose module输出的是image和3D模型之间的密集匹配。
 
 ### 2. Predicative module
 
-Predicative module有三个输入：RGB image，input densepose和target densepose，将三个输入堆叠在一起就是一个$256*256*9$的input，这个input既包含了全局的信息（part分类），又包含了point-level的信息（连续的映射坐标）
+Predicative module有三个输入：RGB image，input densepose和target densepose，将三个输入堆叠在一起就是一个$256\*256\*9$的input，这个input既包含了全局的信息（part分类），又包含了point-level的信息（连续的映射坐标）
 
 通过predicative module处理之后，就能得到target pose的人物图片。这一图片中很好地还原了target pose和头发，衣物形状等信息，但是衣物的样式纹理非常模糊。
 
