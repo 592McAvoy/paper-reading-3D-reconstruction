@@ -19,7 +19,7 @@
 这篇paper中主要提出了四个创新点：
 
 1. 这个模型是**通用**（generic）的，它在当前的agent state基础上预测未来的path location，不需要使用特殊的校准过的数据集
-2. 提出了一个**FCN-LSTM**架构，可以联合的从demonstration loss（main task）和segmentation loss（side loss）进行学习，并输出多模态的预测记过
+2. 提出了一个**FCN-LSTM**架构，可以联合的从demonstration loss（main task）和segmentation loss（side loss）进行学习，并输出多模态的预测结果
 3. 制作并开源了一个大规模的**数据集**
 4. 实验证明了，在预测egomotion（vehicle自身的运动）时使用**side task loss**进行privileged training比只用main task loss快
 
