@@ -2,7 +2,7 @@
 
 论文来源：[End-to-end Learning of Driving Models from Large-scale Video Datasets](https://arxiv.org/pdf/1612.01079.pdf)
 
-项目地址：[gy20073/BDD_Driving_Model](https://github.com/ gy20073/BDD_Driving_Model/ )
+项目地址：[gy20073/BDD_Driving_Model](https://github.com/gy20073/BDD_Driving_Model/)
 
 时间：2019/5/18
 
